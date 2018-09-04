@@ -230,7 +230,7 @@ public class Login extends AppCompatActivity {
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putString("fullName", fullName);
                         editor.putString("user", userName);
-                        editor.putString("temp", MaHoa.encode(passWord));
+                        editor.putString("temp", passWord);
                         editor.putString("matruong",matruong);
                         editor.commit();
                         Intent intent = new Intent(context, UpdateCalender.class);
