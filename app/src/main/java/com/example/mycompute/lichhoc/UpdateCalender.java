@@ -68,7 +68,7 @@ public class UpdateCalender extends AppCompatActivity {
         userName=sharedPreferences.getString("user","");
         passWord=sharedPreferences.getString("temp","");
         matruong=sharedPreferences.getString("matruong","");
-        passWord=MaHoa.decode(passWord);
+        
         if(userName==""|| passWord==""){
             Intent intent=new Intent(this,Login.class);
             startActivity(intent);
